@@ -25,10 +25,10 @@ const syncAndSeed = async () => {
     INSERT INTO icecream(id, name) VALUES (2, 'Cookies & Cream Caramel Swirl');
     INSERT INTO icecream(id, name) VALUES (3, 'Sicilian Pistachio');
     INSERT INTO icecream(id, name) VALUES (4, 'Honeycomb');
-    INSERT INTO info(id, description, desc_id, cost) VALUES (1, 'Salty like pure cane sugar caramelized in small copper pots with cold ground vanilla and a touch of sea salt', 1, 12.00);
-    INSERT INTO info(id, description, desc_id, cost) VALUES (2, 'Cream-filled dark chocolate cookies, folded into creamy vegan base. A touch of cold-ground Tahitian vanilla and a swirl of housemade caramel', 2, 12.00);
-    INSERT INTO info(id, description, desc_id, cost) VALUES (3, 'These pistachios are only found on Mount Etna, folded into a creamy cashew milk base', 3, 12.00);
-    INSERT INTO info(id, description, desc_id, cost) VALUES (4, 'Not made with honeycombs or honey, made with a chewy, crunchy caramel candy and folded into vanilla caramel base', 4, 12.00);
+    INSERT INTO info(id, description, desc_id, cost) VALUES (1, 'salty like pure cane sugar caramelized in small copper pots with cold ground vanilla and a touch of sea salt', 1, 12.00);
+    INSERT INTO info(id, description, desc_id, cost) VALUES (2, 'cream-filled dark chocolate cookies, folded into creamy vegan base. A touch of cold-ground Tahitian vanilla and a swirl of housemade caramel', 2, 12.00);
+    INSERT INTO info(id, description, desc_id, cost) VALUES (3, 'these pistachios are only found on Mount Etna, folded into a creamy cashew milk base', 3, 12.00);
+    INSERT INTO info(id, description, desc_id, cost) VALUES (4, 'not made with honeycombs or honey, made with a chewy, crunchy caramel candy and folded into vanilla caramel base', 4, 12.00);
     
     `;
 
