@@ -16,19 +16,24 @@ const syncAndSeed = async () => {
         id INTEGER PRIMARY KEY,
         description VARCHAR (500),
         cost INTEGER,
-        desc_id INTEGER REFERENCES icecream(id)
-
+        desc_id INTEGER REFERENCES icecream(id), 
+        image_location VARCHAR (1000)
     );
 
 
     INSERT INTO icecream(id, name) VALUES (1, 'Salted Caramel');
-    INSERT INTO icecream(id, name) VALUES (2, 'Cookies & Cream Caramel Swirl');
+    INSERT INTO icecream(id, name) VALUES (2, 'Vegan Cookies & Cream Caramel Swirl');
     INSERT INTO icecream(id, name) VALUES (3, 'Sicilian Pistachio');
     INSERT INTO icecream(id, name) VALUES (4, 'Honeycomb');
     INSERT INTO info(id, description, desc_id, cost) VALUES (1, 'salty like pure cane sugar caramelized in small copper pots with cold ground vanilla and a touch of sea salt', 1, 12.00);
-    INSERT INTO info(id, description, desc_id, cost) VALUES (2, 'cream-filled dark chocolate cookies, folded into creamy vegan base. A touch of cold-ground Tahitian vanilla and a swirl of housemade caramel', 2, 12.00);
+    INSERT INTO info(id, description, desc_id, cost) VALUES (2, 'cream-filled dark chocolate cookies, with a touch of cold-ground Tahitian vanilla and a swirl of housemade caramel', 2, 12.00);
     INSERT INTO info(id, description, desc_id, cost) VALUES (3, 'these pistachios are only found on Mount Etna, folded into a creamy cashew milk base', 3, 12.00);
     INSERT INTO info(id, description, desc_id, cost) VALUES (4, 'not made with honeycombs or honey, made with a chewy, crunchy caramel candy and folded into vanilla caramel base', 4, 12.00);
+
+    UPDATE info SET image_location = 'https://vanleeuwenicecream.com/wp-content/uploads/2020/03/SALTED-CARAMEL_OVERSCOOPED-1.jpg' WHERE id = 1; 
+    UPDATE info SET image_location = 'https://vanleeuwenicecream.com/wp-content/uploads/2020/03/COOKIES-_-CREAM-CARAMEL-SWIRL_OVERSCOOPED-1.jpg' WHERE id = 2; 
+    UPDATE info SET image_location = 'https://vanleeuwenicecream.com/wp-content/uploads/2020/03/PISTACHIO_OVERSCOOPED-1.jpg' WHERE id = 3; 
+    UPDATE info SET image_location = 'https://vanleeuwenicecream.com/wp-content/uploads/2020/03/HONEYCOMB_OVERSCOOPED.jpeg' WHERE id = 4; 
     
     `;
 

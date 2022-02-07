@@ -16,21 +16,23 @@ app.get('/', async (req, res, next) => {
         <link rel ='stylesheet' href='/public/style.css'/>
        </head>
 
-       <h1> Van Leeuwen Ice Cream Flavors</h1>
-       <h4> Est. Brooklyn 2008 </h4>
+       <h1 style="color: skyblue;"> Van Leeuwen Ice Cream Flavors</h1>
+       
        <body class= home>
        
        <ul class= flavors>
          ${
              icecream.map (flavor => `
               <div class= flav>
-                <a href='/icecream/${flavor.id}' style= 'text-decoration: none; color: black;'>
+                <a href='/icecream/${flavor.id}' style= 'text-decoration: none; color: white;'>
                 ${ flavor.name }
                 </a>
               </div>
              `).join("")
          }
        </ul>
+
+       <h3> Est. Brooklyn 2008 </h3>
        </body>
      </html>
         
@@ -58,17 +60,19 @@ app.get('/icecream/:id', async (req, res, next) => {
        <ul class= p2>
          ${
              info.map (desc => `
-
              <div>
-             14 oz pint
+             <img class="resize" src= "${desc.image_location};" >
+             
              </div>
-            
+            <div class=info2>
               <div class=des>
                 ${ desc.description }
               </div>
+
               <div class=cost>
                 Price: $${desc.cost}
               </div>
+              <div>
              `).join("")
          }
        </ul>
