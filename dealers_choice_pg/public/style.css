@@ -14,11 +14,11 @@
   justify-content: space-evenly;
   align-items: center;
   padding: 2rem;
-  margin: 2rem;
+  margin: 1rem;
   text-align: center;
   background-color: #c5e5ba;
   border-radius: 50px;
-  height: 400px;
+  height: 200px;
   width: 400px;
   font-size: 30px;
 }
@@ -35,6 +35,8 @@
    justify-content: space-around;
    align-items: center;
    margin: auto;
+   flex-wrap: wrap;
+   align-content: flex-start;
 }
 
 h1 {
@@ -43,6 +45,7 @@ h1 {
     background-color: white;
     border-radius: 80px;
     padding: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .p2 {
@@ -75,21 +78,37 @@ h3 {
 .info2 {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   border: 1rem solid skyblue;
   border-radius: 60px;
   font-size: 20px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  margin-left: 1rem;
+  margin-left: 5px;
+  background-color: skyblue;
+  width: 500px;
+  height: auto;
+  padding: 1rem;
+
 
 }
 
 .des {
   text-align: center;
   padding:2rem;
+  color: white;
+  border: white dashed 2px;
+  border-radius: 50px;
 }
 
 .cost {
   padding:2rem;
+  color: white;
+}
+
+.detail {
+  background-image: url(Van_Leeuwen_Ice_Cream_logo.png) ;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }

@@ -52,10 +52,10 @@ app.get('/icecream/:id', async (req, res, next) => {
        <head>
         <link rel ='stylesheet' href='/public/style.css'/>
        </head>
-       <h1><a style="text-decoration:none; color: skyblue;" href='/'> Van Leeuwen Ice Cream Flavors</a> </h1>
+       <h1><a style="text-decoration:none; color: skyblue; " href='/'> Van Leeuwen Ice Cream Flavors</a> </h1>
        <h4> Est. Brooklyn 2008 </h4>
 
-       <body>
+       <body class= detail>
        
        <ul class= p2>
          ${
@@ -70,9 +70,14 @@ app.get('/icecream/:id', async (req, res, next) => {
               </div>
 
               <div class=cost>
-                Price: $${desc.cost}
+                price: $${desc.cost}
               </div>
               <div>
+
+              <div><a href='https://destinilocators.com/vanleeuwen/site/'>
+              Check Availibity In Stores
+              </a>
+              </div>
              `).join("")
          }
        </ul>
